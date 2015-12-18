@@ -18,6 +18,7 @@ $sage_includes = [
   'lib/assets.php',                // Scripts and stylesheets
   'lib/titles.php',                // Page titles
   'lib/extras.php',                // Custom functions
+    'lib/wp_bootstrap_navwalker.php', // bootstrap nav walker
 ];
 
 foreach ($sage_includes as $file) {
@@ -28,3 +29,9 @@ foreach ($sage_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+
+function add_menuclass($ulclass) {
+return preg_replace('/<a /', '<i class="fa fa-star fa-rotate-180 hidden-xs"></i> <a ', $ulclass);
+}
+add_filter('wp_nav_menu','add_menuclass');

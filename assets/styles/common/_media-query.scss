@@ -1,0 +1,68 @@
+
+
+
+ // ==========  Mobile First Method  ==========
+ 
+	/* Custom, iPhone Retina */
+
+
+ 
+	/* Extra Small Devices, Phones */
+	@media only screen and (min-width : 480px){ }
+
+	/* Small Devices, Tablets */
+	@media only screen and (min-width : 768px){
+
+		.navbar-header {
+		    float: none;		
+			.site-name {
+			    font-size: 100px;
+			    padding-bottom: 0;
+			}
+			.sitedesc {
+			    margin-top: 0px;
+			    margin-bottom: 12px;
+			    font-size: 40px;
+			}
+
+		}
+		.navbar-default {
+			.navbar-collapse, .navbar-form { border-bottom: none;}
+			.navbar-nav > li {
+			border: 1px solid #F60729;
+			margin-right: 4px;
+		    background: $brand-primary; 
+		    i {
+		    	color: #fff;
+		    }
+			& > a {
+		    color: $brand-primary;
+		    display: inline-block;
+		    padding: 4px 10px 2px;
+		    border: none;
+		    background: #fff;
+		   &  > a:focus {
+		   		background: $brand-primary;
+		   		color: #fff;
+			    }
+			}
+		}
+
+			// .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+			//     color: #FFF;
+			//     background-color: #F00;
+			// }
+
+
+	}
+
+		.fa-star::before{padding-right: 3px;}
+			
+
+	}
+	/* Medium Devices, Desktops */
+	@media only screen and (min-width : 992px){ }
+ 
+ 
+	/* Large Devices, Wide Screens */
+	@media only screen and (min-width : 1200px){ }

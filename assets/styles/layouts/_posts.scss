@@ -1,0 +1,22 @@
+// Front Page
+.home .page-header {
+	@extend .offscreen;
+}
+
+
+
+
+
+// Media Queries - will override all except for tinymce
+
+@media(max-width:767px){
+	
+}
+@media(min-width:768px){ 
+	//.site-name {font-size: 2em; }
+	
+}
+@media(min-width:992px){ 
+	//.site-name {font-size: 6em; }
+	
+}
