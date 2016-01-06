@@ -1,10 +1,6 @@
 <?php if (is_front_page() ){ ?>
 <div class="sectors">
-      <?php
-      // if (has_nav_menu('home_sectors')) :
-      //   wp_nav_menu(['theme_location' => 'home_sectors', 'menu_class' => 'div']);
-      // endif;
-      ?>
+
 <?php if( have_rows('sector') ): ?>
  
     <ul>

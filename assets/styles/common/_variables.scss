@@ -11,11 +11,12 @@ $sidebar-sm-columns:    4;
 
 // Colors
 $brand-primary: rgb(246,7,41);
+$brand-dark: darken( $brand-primary, 8);
 $dark:	#333;
 
 
 $titlestrips: 55px;
-$homeblocks: 160px;
+$homeblocks: 155px;
 
 .offscreen {
   position:absolute;

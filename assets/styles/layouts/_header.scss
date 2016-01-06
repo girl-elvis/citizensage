@@ -11,12 +11,14 @@ margin-top: 5px;
 
 .navbar-brand > img {
     width: 100%;
+    margin-top: 1em;
+margin-right: 1em;
 }
 
 .sitedesc{
 	margin-top: 0;
 	margin-bottom: 0;
-	font-size: 5.6vw;
+	font-size: 4.6vw;
 	}
 .site-name {
 	font-size: 3.3em; 
@@ -32,7 +34,7 @@ margin-top: 5px;
 
 	}
 }
-.logowrap{white-space: nowrap;}
+// .logowrap{white-space: nowrap;}
 .navbar-toggle {
 	float: left;
 	color: $brand-primary;
@@ -47,7 +49,7 @@ margin-top: 5px;
     border: none;
     padding: 0px 10px;
     .navbar-nav {
-	    margin: 0px -15px;
+	    margin: 0px ;
 	    & > li > a {
 	    color:$brand-primary;
 	    background:  #fff;
@@ -68,6 +70,19 @@ margin-top: 5px;
     border-color: $brand-primary;
     border-bottom-style: solid;
 	border-bottom-width: 1px;
+}
+
+
+
+
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: $dark;
+    background-color: rgb(255, 255, 255);
+    }
+.navbar-nav > li.current-menu-item i.fa-star {
+	color: $dark;
 }
 
 // #menu-main {

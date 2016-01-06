@@ -32,6 +32,6 @@ unset($file, $filepath);
 
 
 function add_menuclass($ulclass) {
-return preg_replace('/<a /', '<i class="fa fa-star fa-rotate-180 hidden-xs"></i> <a ', $ulclass);
+  return preg_replace('/<a /', '<i class="fa fa-star fa-rotate-180 hidden-xs"></i> <a ', $ulclass);
 }
-add_filter('wp_nav_menu','add_menuclass');
+// add_filter('wp_nav_menu','add_menuclass');
