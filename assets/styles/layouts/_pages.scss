@@ -43,6 +43,7 @@
 				margin-top: 120px;
 				padding-bottom: 4px;
 				color: #fff;
+				white-space: nowrap;
 		}
 			span {
 				display: block;
@@ -58,6 +59,7 @@
 			// &:nth-of-type(6) .desc {border-bottom-color: $green;}
 	}
 }
+
 
 #custom-bg {
 // 	background-repeat: no-repeat;

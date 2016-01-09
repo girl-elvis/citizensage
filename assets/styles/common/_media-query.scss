@@ -22,7 +22,7 @@
 			.sitedesc {
 			    margin-top: 0px;
 			    margin-bottom: 12px;
-			    font-size: 26px;
+			    font-size: 20px;
 			}
 
 		}
@@ -30,8 +30,9 @@
 			.navbar-collapse, .navbar-form { border-bottom: none;}
 			.navbar-nav > li {
 			border: 1px solid #F60729;
-			margin-right: 20px;
+			margin-right: 18px;
 		    background: $brand-primary; 
+		    white-space: nowrap;
 		    i {
 		    	color: #fff;
 		    }
@@ -58,7 +59,7 @@
 
 		.fa-star::before{padding-right: 3px;}
 			
-		.sectors ul li .desc h2 {font-size: 2vw;}
+		.sectors ul li .desc h2 {font-size: 22px;}
 	}
 	/* Medium Devices, Desktops */
 	@media only screen and (min-width : 992px){ 

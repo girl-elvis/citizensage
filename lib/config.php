@@ -52,7 +52,7 @@ function display_sidebar() {
        *
        */
       [
-        'is_404',
+        'is_404','is_single', 'is_archive', 'is_page',
         'is_front_page',
         ['is_page_template', 'template-custom.php']
       ]

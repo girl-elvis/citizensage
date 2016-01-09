@@ -11,7 +11,7 @@ $sidebar-sm-columns:    4;
 
 // Colors
 $brand-primary: rgb(246,7,41);
-$brand-dark: darken( $brand-primary, 8);
+$brand-dark: darken( $brand-primary, 12);
 $dark:	#333;
 
 
@@ -37,3 +37,16 @@ $homeblocks: 155px;
 }
 $bodyfont:   sans-serif;
 $headerfont:  'Rockwell', serif;
+
+
+
+// /* Change grid sizing to 960 */
+// $grid-gutter-width:         20px !default;
+// $half-gutter: $grid-gutter-width/2 ;
+
+// // Small screen / tablet
+// $container-tablet:             (920px + $grid-gutter-width) !default;
+
+// // Large screen / wide desktop
+// $container-large-desktop:      (940px + $grid-gutter-width) !default;
+
