@@ -1,8 +1,8 @@
-<header class="banner navbar navbar-default navbar-static-top" role="banner">
+<header class="banner navbar navbar-default navbar-fixed-top" role="banner">
   <?php //echo do_shortcode('[google-translator]'); ?>
    <div class="container">
     
-    <div class="navbar-header">
+    <div class="navbar-header ">
 
       <div class="row">
      

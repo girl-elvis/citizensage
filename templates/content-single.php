@@ -4,6 +4,15 @@
       <h1 class="entry-title notranslate"><?php the_title(); ?></h1>
       <?php get_template_part('templates/entry-meta'); ?>
     </header>
+    <?php  
+    $attachments = get_children( array('post_parent' => get_the_ID(), 'post_type' => 'attachment', 'post_mime_type' => 'image') );
+
+    if ( $attachments ) {
+        echo do_shortcode ('[gallery royalslider="2"]'); 
+     // do conditional stuff here 
+
+    } 
+    ?>
     <div class="entry-content">
       <?php the_content(); ?>
     </div>

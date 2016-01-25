@@ -73,5 +73,12 @@
 
   // Load Events
   $(document).ready(UTIL.loadEvents);
+  $(window).scroll(function() {
+          if ($(document).scrollTop() > 50) {
+            $('.navbar').addClass('shrink');
+          } else {
+            $('.navbar').removeClass('shrink');
+          }
+        });
 
 })(jQuery); // Fully reference jQuery after this point.

@@ -3,6 +3,17 @@
 
  // ==========  Mobile First Method  ==========
  
+// Custom remove fixed header on mobile
+@media (max-width: 767px) /* @grid-float-breakpoint -1 */
+{
+    .navbar-fixed-top
+    {
+    position: relative;
+    top: auto;
+    }
+}
+
+
 	/* Custom, iPhone Retina */
 
 
@@ -12,17 +23,20 @@
 
 	/* Small Devices, Tablets */
 	@media only screen and (min-width : 768px){
+		body{ margin-top: 203px;}
 
 		.navbar-header {
 		    float: none;		
 			.site-name {
 			    font-size: 100px;
-			    padding-bottom: 0;
+			    padding-bottom: 0;transition: height 0.5s ease;
+			    .shrink & {font-size: 55px;transition: height 0.5s ease;}
 			}
 			.sitedesc {
 			    margin-top: 0px;
 			    margin-bottom: 12px;
-			    font-size: 20px;
+			    font-size: 20px;transition: height 0.5s ease;
+			    .shrink & { display: none;transition: height 0.5s ease;}
 			}
 
 		}
@@ -49,6 +63,10 @@
 			}
 		}
 
+		&.shrink .navbar-brand > img {
+		    width: 43%;
+		    margin-top: 0.3em;
+		}
 			// .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
 			//     color: #FFF;
 			//     background-color: #F00;
@@ -59,7 +77,20 @@
 
 		.fa-star::before{padding-right: 3px;}
 			
-		.sectors ul li .desc h2 {font-size: 22px;}
+		.sectors ul {
+			//margin: 2em 0;
+			 li {
+			// 	&:nth-of-type(3n+1){
+			// 	padding-left: 0;
+			// 	padding-right: $grid-gutter-width;
+			// 	}
+			// 	&:nth-of-type(3n){
+			// 		padding-right: 0;
+			// 		padding-left: $grid-gutter-width;
+			// 	}
+				.desc h2 {font-size: 22px;}
+			 }
+		}
 	}
 	/* Medium Devices, Desktops */
 	@media only screen and (min-width : 992px){ 

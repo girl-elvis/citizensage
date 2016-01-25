@@ -1,3 +1,10 @@
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;  /*change 1170 to 970*/
+  }
+}
+
+
 .container-fluid,
 .container {
   // Disable large-desktop breakpoint.
@@ -18,3 +25,6 @@ a:hover { text-decoration: none;}
 html {
     margin-top: 10px !important;
 }
+
+
+body{ margin-top: 165px;}

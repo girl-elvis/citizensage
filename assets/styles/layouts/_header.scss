@@ -1,7 +1,16 @@
+.navbar.shrink {
+  max-height: 125px;
+  transition: height 0.5s ease;
+  border-bottom: 1px solid $brand-primary;
+}
 
-.brand { 
+// .shrink a {
+//   padding-top: 10px !important;
+//   padding-bottom: 10px !important;
+//   font-size: 15px;
+// }
 
-} 
+
 .navbar-brand{ 
 @extend .pull-right;
 height: auto;
@@ -45,9 +54,9 @@ margin-right: 1em;
 
 }
 .navbar-default {
-    background-color: transparent;
+    background-color: white;
     border: none;
-    padding: 0px 10px;
+    padding: 0px 20px 10px;
     .navbar-nav {
 	    margin: 0px ;
 	    & > li > a {

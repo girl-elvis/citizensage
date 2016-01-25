@@ -10,8 +10,9 @@ $sidebar-sm-columns:    4;
 
 
 // Colors
-$brand-primary: rgb(246,7,41);
+$brand-primary: rgb(246,7,41); 
 $brand-dark: darken( $brand-primary, 12);
+$trans-dark: rgba( $brand-dark, .7 );
 $dark:	#333;
 
 
@@ -40,9 +41,10 @@ $headerfont:  'Rockwell', serif;
 
 
 
-// /* Change grid sizing to 960 */
-// $grid-gutter-width:         20px !default;
-// $half-gutter: $grid-gutter-width/2 ;
+
+ $grid-gutter-width:         20px !default;
+$half-gutter: $grid-gutter-width/2 ;
+$double-gutter: $grid-gutter-width * 2;
 
 // // Small screen / tablet
 // $container-tablet:             (920px + $grid-gutter-width) !default;
