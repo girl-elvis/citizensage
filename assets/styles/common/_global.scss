@@ -11,7 +11,11 @@
   //max-width: $screen-md;
 }
 
-body, p { font-family: $bodyfont;}
+body, p { font-family: $bodyfont; color: $dark;}
+
+body{background: url('../images/woodpalebg.jpg') #fff;}
+
+.main {background: #fff;}
 
 h1, h2, h3, h4, h5, h6, #menu li a 
 {
@@ -27,4 +31,4 @@ html {
 }
 
 
-body{ margin-top: 165px;}
+//body{ margin-top: 165px;}

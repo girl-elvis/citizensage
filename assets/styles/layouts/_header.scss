@@ -1,7 +1,6 @@
 .navbar.shrink {
   max-height: 125px;
   transition: height 0.5s ease;
-  border-bottom: 1px solid $brand-primary;
 }
 
 // .shrink a {
@@ -12,25 +11,25 @@
 
 
 .navbar-brand{ 
-@extend .pull-right;
 height: auto;
 padding: 0;
-margin-top: 5px;
+margin-top: 10px;
 }
 
 .navbar-brand > img {
-    width: 100%;
-    margin-top: 1em;
-margin-right: 1em;
+    
+//     margin-top: 1em;
+// margin-right: 1em;
 }
+.navbar > .container .navbar-brand{margin-left: 0;}
 
 .sitedesc{
 	margin-top: 0;
 	margin-bottom: 0;
-	font-size: 4.6vw;
+	font-size: 4.2vw;
 	}
 .site-name {
-	font-size: 3.3em; 
+	font-size: 3em; 
 	font-size: 14.4vw;
 	margin-top: 10px;
 	margin-bottom: 0;
@@ -43,28 +42,41 @@ margin-right: 1em;
 
 	}
 }
-// .logowrap{white-space: nowrap;}
-.navbar-toggle {
-	float: left;
-	color: $brand-primary;
-	padding: 3px 6px 3px 30px;
-	background: url("../images/logo.png") no-repeat;
-	background-size: contain;
-	border: none;
 
-}
+
 .navbar-default {
     background-color: white;
     border: none;
-    padding: 0px 20px 10px;
+    padding: 0px 0 0;
+    margin-bottom: 0;
+    //border-bottom: $dark 4px solid;
     .navbar-nav {
 	    margin: 0px ;
 	    & > li > a {
-	    color:$brand-primary;
+	    color:$dark;
 	    background:  #fff;
 	    border: 1px solid white;
 	    display: inline-block;
+	    padding: 5px;
 	    }
+	}
+	.navbar-toggle {
+
+		color: #fff;
+		padding: 3px 6px 3px 30px;
+		background-size: contain;
+		border: none;
+		background: $dark none repeat scroll 0% 0%;
+
+		width: 100%;
+		color: white;
+		text-align: left;
+		margin-right: 0;
+		margin-bottom: 0;
+		&:hover {
+			background: $brand-dark;
+		}
+
 	}
 }
 
@@ -76,12 +88,11 @@ margin-right: 1em;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: $brand-primary;
+    border-color: $dark;
     border-bottom-style: solid;
 	border-bottom-width: 1px;
+	border-top: 0px none;
 }
-
-
 
 
 
